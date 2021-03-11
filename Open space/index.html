@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img class="planet" src="assets/mars.png" alt="planet Mars" />
+            <img class="rocket" src="assets/rocket.png" alt="space rocket" />
+        </div>
+        <div class="control-panel">
+            <div class="control-panel__inner">
+                <!--textarea and OK button-->
+                <input id="text-box" type="password" placeholder="Enter password to unlock" />
+                <input id="ok-button" type="submit" value="OK" />
+
+                <!--checkbox buttons-->
+                <div class="check-buttons">
+                    <label for="check-box1" ></label>
+                    <input id="check-box1" class="check-box" type="checkbox" />
+                    <label for="check-box2" ></label>
+                    <input id="check-box2" class="check-box" type="checkbox" />
+                    <label for="check-box3" ></label>
+                    <input id="check-box3" class="check-box" type="checkbox" />
+                    <label for="check-box4" ></label>
+                    <input id="check-box4" class="check-box" type="checkbox" />
+                    <label for="check-box5" ></label>
+                    <input id="check-box5" class="check-box" type="checkbox" />
+                    <label for="check-box6" ></label>
+                    <input id="check-box6" class="check-box" type="checkbox" />
+                </div>
+                <!--levers-->
+                <div class="levers">
+                    <input id="slider1" class="slider" type="range" min="1" max="9" value="5" />
+                    <input id="slider2" class="slider" type="range" min="1" max="9" value="5" />
+                    <input id="slider3" class="slider" type="range" min="1" max="9" value="5" />
+                    <input id="slider4" class="slider" type="range" min="1" max="9" value="5" />
+                    <input id="slider5" class="slider" type="range" min="1" max="9" value="5" />
+                </div>
+
+                <!--launch button-->
+                <input id="launch-button" type="button" value="Launch" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

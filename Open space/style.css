@@ -1,0 +1,98 @@
+body {
+    background-color: #000;
+    width: 60%;
+    margin: auto;
+}
+
+.space {
+    height: 100vh;
+    background-image: url("./assets/space.png");
+    background-color: #000;
+    background-repeat: repeat;
+    position: relative;
+}
+
+.planet-area {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.planet {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.rocket {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    bottom: 46vh;
+    left: 23vw;
+    transform: rotate(25deg);
+    z-index: 1;
+}
+
+.control-panel {
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    bottom: 30px;
+    right: 20px;
+    z-index: 5;
+    padding: 15px;
+    background-color: black;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(243, 255, 15, 1) 35px, rgba(0, 0, 0, 1) 70px);
+}
+
+.control-panel__inner {
+    width: 100%;
+    height: 100%;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    /*justify-content: space-around;*/
+}
+
+#text-box {
+    background-color: transparent;
+    border: solid 1px yellow;
+    border-radius: 10%;
+    color: yellow;
+}
+
+#ok-button {
+    background-color: yellow;
+    border: outset 1px black;
+    border-radius: 10%;
+}
+
+.check-buttons, .levers {
+    margin: 5px 0;
+    width: 100%;
+    flex: 1 1 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slider[type="range"] {
+    -webkit-appearance: slider-vertical;  /* Chrome */
+    writing-mode: bt-lr;  /* IE */
+    /*height: 60px;*/
+    width: 5px;
+}
+
+#launch-button {
+    background-color: red;
+    margin: 10px 0;
+    border: solid 2px white;
+    border-radius: 50%;
+    padding: 5% 2%;
+    color: white;
+    font-size: 2em;
+}
